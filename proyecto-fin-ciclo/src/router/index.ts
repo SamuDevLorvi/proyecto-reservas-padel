@@ -3,6 +3,8 @@ import inicioSesion from '@/views/inicioSesion.vue'
 import tiendaPadel from '@/views/tiendaPadel.vue'
 import reservarPista from '@/views/reservarPista.vue'
 import { createRouter, createWebHistory } from 'vue-router'
+import usuarioPerfil from '@/views/usuarioPerfil.vue'
+import realizarPagos from '@/views/realizarPagos.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +29,16 @@ const router = createRouter({
       name: 'tienda',
       component: tiendaPadel,
     },
+    {
+      path: '/perfil',
+      name: 'perfil',
+      component: usuarioPerfil
+    },
+    {
+      path: '/pagos',
+      name: 'pagos',
+      component: realizarPagos
+    }
   ],
 })
 
